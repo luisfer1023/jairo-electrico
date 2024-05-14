@@ -1,0 +1,303 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Estilos generales */
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilos de la barra de navegación */
+.menu {
+  position: fixed; /* Hacer la barra de navegación fija */
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  background-color: #fff; /* Agregar un color de fondo */
+  z-index: 1000; /* Asegurar que la barra esté por encima de otros elementos */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agregar una sombra sutíl */
+  font-family: "Oswald", sans-serif;
+}
+
+.logo {
+  font-size: 25px;
+  color: #111;
+  font-weight: 400;
+}
+
+.logo img{
+  width: 80px;
+}
+
+#menu {
+  display: none;
+}
+
+.menu label {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.menu label img.menu-icono {
+  width: 25px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  font-size: 18px;
+  padding: 20px;
+  color: #111;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.submenu {
+  position: relative;
+}
+
+.submenu #carrito {
+  display: none;
+}
+
+.submenu:hover #carrito {
+  display: block;
+  position: absolute;
+  right: 0;
+  backdrop-filter: blur(10px);
+  top: 100%;
+  z-index: 1;
+  background-color: #4e4e4e;
+  padding: 20px;
+  min-width: 400px;
+}
+
+#cart-count {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 1em;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.btn-2 {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #111;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "Oswald", sans-serif;
+  transition: background-color 0.3s;
+  width: 120px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.btn-2:hover {
+  background-color: #4e4e4e;
+}
+
+/* Estilos del footer */
+.footer {
+  padding: 30px;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link a {
+  font-size: 16px;
+  color: #dcdcdc;
+  display: block;
+}
+
+.link li {
+  font-size: 16px;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+}
+
+.menu-label {
+  display: none;
+}
+
+/* Estilos de la sección de contacto */
+.informacion {
+  margin-top: 100px; /* Espacio entre la barra de navegación y el formulario */
+  background-color: #f2e6e6;
+  padding: 20px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column; /* Alinear elementos del formulario en columna */
+  align-items: center; /* Alinear elementos del formulario en el centro */
+  align-content: center;
+  
+}
+
+form {
+  width: 90%; /* Reducir el ancho del formulario */
+  max-width: 500px; /* Ancho máximo del formulario */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.input-box {
+  width: 100%; /* Ajustar el ancho del input */
+  margin-bottom: 20px;
+  position: relative;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: calc(100% - 20px); /* Ajustar el ancho del input */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+textarea {
+  height: 150px; /* Ajustar la altura del textarea */
+}
+
+button[type="submit"] {
+  background-color: #111;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #4e4e4e;
+}
+
+/* Iconos de redes sociales */
+.social-icons {
+  display: flex;
+  align-items: center;
+  margin-top: -600px;
+  float: right;
+  
+  
+}
+
+#img-form {
+max-width:550px ;   
+  margin-top: -480px;
+  float: right;
+  margin-left: center;
+}
+
+.social-icons a {
+  color: rgb(244, 13, 13);
+  font-size: 25px;
+  margin: 0 10px; /* Espacio entre los iconos */
+}
+
+.social-icons a:last-child {
+  margin-right: 0; /* Eliminar el margen derecho del último icono */
+}
+
+
+@media (max-width: 991px) {
+  /* Estilos de la barra de navegación */
+  .menu {
+    padding: 20px;
+  }
+
+  .menu label {
+    display: initial;
+  }
+
+  .menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #181818;
+    display: none;
+  }
+
+  .menu .navbar ul li {
+    width: 100%;
+  }
+
+  .menu ul li a {
+    color: #fff;
+  }
+
+  #menu:checked ~ .navbar {
+    display: initial;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .submenu:hover #carrito {
+    min-width: 100%;
+  }
+
+  /* Estilos del footer */
+  .footer {
+    padding: 30px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Estilos de la barra de navegación */
+  .menu-label {
+    display: flex;
+  }
+
+  .menu-icono {
+    display: flex;
+  }
+}

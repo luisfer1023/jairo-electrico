@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jairo electric</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="menu container">
+      <a href="#" class="logo"><img src="imagenes/logo.ico" alt=""></a>
+      <input type="checkbox" id="menu" />
+      <label for="menu">
+        <img src="imagenes/menu.png" class="menu-icono" alt="menu" />
+      </label>
+      
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li>
+            <a href="productos.html" class="boton-productos">Productos</a>
+          </li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="login.html">inicar sesion</a></li>
+        </ul>
+      </nav>
+      <div>
+        <ul>
+            <li class="submenu">
+                <img src="imagenes/car.svg" id="img-carrito" alt="carrito" />
+                <span id="cart-count">0</span>
+                <div id="carrito">
+                    <table id="lista-carrito">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <a href="#" id="vaciar-carrito" class="btn-2">Vaciar</a>
+                    <a href="pago.html" class="btn-2">Comprar</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="products container" id="lista-1">
+      <h2>Productos</h2>
+
+      <div class="product-content">
+        <div class="product">
+          <img src="imagenes/bobina de encendido aveo.png" alt="" />
+          <div class="product-txt">
+            <h3>Bobina de Aveo</h3>
+            <p class="precio">120.000 cop</p>
+            <p>Aplica para todos los modelos de Chevrolet Aveo</p>
+            <button
+              class="agregar-carrito btn-2"
+              data-nombre="Bobina de Aveo"
+              data-precio="120000"
+            >
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <img src="imagenes/bomba de gasolina.png" alt="" />
+          <div class="product-txt">
+            <h3>Bomba de gasolina</h3>
+            <p class="precio">380.000 cop</p>
+            <p>bomba de gasolina completa</p>
+            <button
+              href="#"
+              class="agregar-carrito btn-2"
+              data-id="2"
+              data-nombre="Bomba de gasolina"
+              data-precio="380000"
+            >
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="imagenes/bombillos h4.jpg" alt="" />
+          <div class="product-txt">
+            <h3>bombillos led h4</h3>
+            <p class="precio">200.000 cop</p>
+            <p>bombillos principales h4 9000 lumens</p>
+            <button
+              href="#"
+              class="agregar-carrito btn-2"
+              data-id="2"
+              data-nombre="bombillos led h4"
+              data-precio="200000"
+            >
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="imagenes/alternador.png" alt="" />
+          <div class="product-txt">
+            <h3>alternador</h3>
+            <p class="precio">550.000 cop</p>
+            <p>alternadorde arranque para su vehiculo</p>
+            <button
+              href="#"
+              class="agregar-carrito btn-2"
+              data-id="2"
+              data-nombre="alternador"
+              data-precio="550000"
+            >
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="imagenes/conector de inyector combustible.png" alt="" />
+          <div class="product-txt">
+            <h3>conector de inyector</h3>
+            <p class="precio">120.000 cop</p>
+            <p>conector de inyector de combustible</p>
+            <button
+              href="#"
+              class="agregar-carrito btn-2"
+              data-id="2"
+              data-nombre="conector de inyector"
+              data-precio="120000"
+            >
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="imagenes/conector de inyector aveo.png" alt="" />
+          <div class="product-txt">
+            <h3>conector de inyector aveo</h3>
+            <p class="precio">10.000 cop</p>
+            <p>bomba de gasolina completa</p>
+            <button
+              href="#"
+              class="agregar-carrito btn-2"
+              data-id="2"
+              data-nombre="conector de inyector aveo"
+              data-precio="10000"
+            >
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="imagenes/cornetas.jpg" alt="" />
+          <div class="product-txt">
+            <h3>cornetas</h3>
+            <p class="precio">380.000 cop</p>
+            <p>cornetas para el pito del carro</p>
+            <button
+              href="#"
+              class="agregar-carrito btn-2"
+              data-id="2"
+              data-nombre="cornetas"
+              data-precio="380000"
+            >
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="imagenes/bornes.png" alt="" />
+          <div class="product-txt">
+            <h3>bornes</h3>
+            <p class="precio">380.000 cop</p>
+            <p>bornes de bateria gruesos</p>
+            <button
+              href="#"
+              class="agregar-carrito btn-2"
+              data-id="2"
+              data-nombre="bornes"
+              data-precio="380000"
+            >
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="imagenes/correa 760.jpg" alt="" />
+          <div class="product-txt">
+            <h3>correa</h3>
+            <p class="precio">380.000 cop</p>
+            <p>correa para su vehiculo</p>
+            <button
+              href="#"
+              class="agregar-carrito btn-2"
+              data-id="2"
+              data-nombre="correa"
+              data-precio="380000"
+            >
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="imagenes/bomba de gasolina.png" alt="" />
+          <div class="product-txt">
+            <h3>bomba de gasolina</h3>
+            <p class="precio">380.000 cop</p>
+            <p>bomba de gasolina completa</p>
+            <button
+              href="#"
+              class="agregar-carrito btn-2"
+              data-id="2"
+              data-nombre="bomba de gasolina"
+              data-precio="380000"
+            >
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="imagenes/bomba de gasolina.png" alt="" />
+          <div class="product-txt">
+            <h3>bomba de gasolina</h3>
+            <p class="precio">380.000 cop</p>
+            <p>bomba de gasolina completa</p>
+            <button
+              href="#"
+              class="agregar-carrito btn-2"
+              data-id="2"
+              data-nombre="bomba de gasolina"
+              data-precio="380000"
+            >
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="imagenes/bomba de gasolina.png" alt="" />
+          <div class="product-txt">
+            <h3>bomba de gasolina</h3>
+            <p class="precio">380.000 cop</p>
+            <p>bomba de gasolina completa</p>
+            <button
+              href="#"
+              class="agregar-carrito btn-2"
+              data-id="2"
+              data-nombre="bomba de gasolina"
+              data-precio="380000"
+            >
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content container">
+        <div class="link">
+          <h3>Contactanos</h3>
+          <ul>
+            <li>3013512066</li>
+            <li>Cualquier pregunta</li>
+            <li>Dudas</li>
+            <li>Escribenos</li>
+          </ul>
+        </div>
+
+        <div class="link">
+          <h3>¿Quien somos?</h3>
+          <ul>
+            <li>Taller eléctrico automotriz</li>
+            <li>Almacén de productos</li>
+          </ul>
+        </div>
+
+        <div class="link">
+          <h3>Contactanos</h3>
+          <ul>
+            <li>3013512066</li>
+            <li>Cualquier pregunta</li>
+            <li>Dudas</li>
+            <li>Escribenos</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
